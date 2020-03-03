@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../static/style.css" />
+    <title>Please rate your service</title>
+  </head>
+  <body>
+    <div class="container">
+      <img src="../static/jacis.png" alt="Lexus" class="logo" />
+      {% if message %}
+      <p class="message">{{ message | safe }}</p>
+      {% endif %}
+      <form action="/submit" method="POST">
+        <div class="form-group">
+            <input type="submit" name = 'Submit' value="Pedido" class = "btn" />
+            <input type="submit" name = 'Submit' value="Guia" class = "btn" />
+            <input type="submit" name = 'Submit' value="Consulta de Productos" class= "btn" />
+            <input type="submit" name = 'Submit' value="Ingreso de Productos" class= "btn" />
+            <input type="submit" name = 'Submit' value="Egreso de Productos" class= "btn" />
+        </div>
+
+  </body>
+</html>
